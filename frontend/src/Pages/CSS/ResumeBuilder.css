@@ -1,0 +1,262 @@
+/* Reset and base styles */
+.resume-builder {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: #3498db;
+    background: #f4f4f4;
+  }
+
+  .builder-area{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    margin-left: 1rem;
+    position: relative;
+  }
+
+  .aside{
+    background-color: #FFF;
+  }
+  
+  /* Layout containers */
+  .edit-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: white;
+  }
+  
+  .form-section, 
+  .preview-section {
+    width: 100%;
+    padding: 1.25rem;
+    background: #f4f4f4;
+  }
+  
+  .edit-page {
+    justify-content: space-evenly;
+  }
+  
+  .edit-page > div {
+    width: 42%;
+    background: white;
+  }
+  
+  /* Form styles */
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+  
+  .form-section form .grid-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+  }
+  
+  .form-section form .grid-box label {
+    display: inline-block;
+    width: 30%;
+  }
+  
+  .form-section form label {
+    margin-top: 10px;
+  }
+  
+  .form-section form input, 
+  .form-section form textarea {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  
+  .form-section form button:hover {
+    background-color: #4b4b50;
+    color: white;
+  }
+  
+  /* Preview section */
+  .preview-section #resume-preview {
+    border: 1px solid #ccc;
+  }
+  
+  /* Download button */
+  .download-icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  /* Editor icons */
+  .edit-icon {
+    float: right;
+  }
+  
+  .edit-icon-hidden {
+    display: none;
+  }
+  
+  /* Overlay styles */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+  
+  /* Modify table styles */
+  .modify-table {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f4f4f4;
+    padding: 20px;
+    z-index: 1100;
+    border-radius: 10px;
+    min-width: 400px;
+    min-height: 248px;
+  }
+  
+  .modify-table.active {
+    display: block;
+  }
+  
+  .modify-table table {
+    width: 400px;
+    height: 248px;
+  }
+  
+  .modify-table tr {
+    color: black;
+  }
+  
+  .modify-table td {
+    font-size: 24px;
+    text-align: left;
+    padding: 0 4px 16px 4px;
+  }
+  
+  .modify-table button {
+    min-width: 64px;
+    font-size: 20px;
+    padding: 2px;
+    margin: 0 5%;
+  }
+  
+  .modify-table .btn-cell {
+    text-align: center;
+  }
+  
+  /* Form container visibility */
+  .form-container-hidden {
+    display: none;
+  }
+  
+  /* Component hover states */
+  .component {
+    background: #ffffff;
+    transition: background-color 0.2s ease;
+  }
+  
+  .component:hover,
+  .component-hover {
+    background: #f4f4f4;
+  }
+  
+  /* Resume sections */
+  .resume-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .resume-section h2 {
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Education entry styles */
+  .education-entry {
+    margin-bottom: 1rem;
+  }
+  
+  .education-entry table {
+    width: 100%;
+    border-spacing: 0;
+  }
+  
+  /* Skill list styles */
+  .skill-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skill-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Experience entry styles */
+  .experience-entry {
+    margin-bottom: 1.5rem;
+  }
+  
+  .experience-entry h3 {
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+  }
+  
+  .experience-entry p {
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-entry ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  /* Utility classes */
+  .disabled {
+    filter: grayscale(1);
+    pointer-events: none;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  /* Body state when overlay is active */
+  body.overlay-active {
+    overflow: hidden;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .edit-page {
+      flex-direction: column;
+    }
+  
+    .edit-page > div {
+      width: 90%;
+      margin: 1rem auto;
+    }
+  
+    .modify-table {
+      width: 90%;
+      min-width: unset;
+    }
+  }

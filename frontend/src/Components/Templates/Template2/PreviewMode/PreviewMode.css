@@ -1,0 +1,187 @@
+/* PreviewMode.css */
+.template2 {
+    padding: 2rem;
+    max-width: 8.27in;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+}
+
+/* Header Styles */
+.template2-header {
+    margin-bottom: 2rem;
+}
+
+.name-title {
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.title-text {
+    font-size: 0.875rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0.25rem 0 0 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Layout */
+.main-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 2rem;
+}
+
+.left-column {
+    border-right: 1px solid #ddd;
+    padding-right: 2rem;
+}
+
+.right-column {
+    padding-left: 1rem;
+}
+
+/* Section Headers */
+.template2 h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Education Section */
+.education-item {
+    margin-bottom: 1rem;
+}
+
+.school {
+    font-weight: 500;
+    margin: 0 0 0.25rem 0;
+}
+
+.degree {
+    margin: 0 0 0.25rem 0;
+    font-size: 0.875rem;
+}
+
+.graduation-date {
+    color: #666;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* Skills Section */
+.template2-skills {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.template2-skills li {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Certifications Section */
+.certification-item {
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 0.875rem;
+}
+
+.cert-name {
+    margin: 0;
+    font-weight: 500;
+    flex: 1;
+}
+
+.cert-date {
+    margin: 0;
+    color: #666;
+}
+
+/* Experience Section */
+.experience-item {
+    margin-bottom: 1.5rem;
+}
+
+.exp-header {
+    margin-bottom: 0.5rem;
+}
+
+.role-company {
+    font-weight: 500;
+    margin: 0 0 0.25rem 0;
+}
+
+.exp-location-date {
+    color: #666;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.responsibilities {
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+}
+
+.responsibilities li {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+}
+
+/* Projects Section */
+.project-item {
+    margin-bottom: 1rem;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.25rem;
+}
+
+.project-name {
+    font-weight: 500;
+    margin: 0;
+}
+
+.project-date {
+    color: #666;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.project-description {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* Print styles */
+@media print {
+    .template2 {
+        padding: 0;
+    }
+}

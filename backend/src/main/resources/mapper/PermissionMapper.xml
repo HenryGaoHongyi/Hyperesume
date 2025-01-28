@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hyperesume.mapper.PermissionMapper">
+
+    <!-- Query all permissions -->
+    <select id="findAll" resultType="com.hyperesume.model.SysMenu">
+        SELECT * FROM Sys_menu
+    </select>
+
+    <!-- Query permissions associated with a user by user ID -->
+    <select id="findByUserId" parameterType="java.lang.Long" resultType="com.hyperesume.model.SysMenu">
+        SELECT DISTINCT m.*
+        FROM users u
+                 LEFT JOIN Sys_role_user sru ON u.id = sru.user_id
+                 LEFT JOIN Sys_Role r ON sru.role_id = r.role_id
+                 LEFT JOIN Sys_menu_role smr ON smr.role_id = r.role_id
+                 LEFT JOIN Sys_menu m ON m.menu_id = smr.menu_id
+        WHERE u.id = #{userId} AND m.menu_id IS NOT NULL
+    </select>
+
+</mapper>

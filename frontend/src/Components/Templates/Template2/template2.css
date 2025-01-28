@@ -1,0 +1,225 @@
+.template2 {
+    padding: 2rem;
+    max-width: 8.27in;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.template2-header {
+    margin-bottom: 2rem;
+}
+
+.name-title {
+    margin-bottom: 1rem;
+}
+
+.name-input {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.title-text {
+    font-size: 0.875rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0.25rem 0 0 0;
+}
+
+.contact-info {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 2rem;
+}
+
+.left-column {
+    border-right: 1px solid #ddd;
+    padding-right: 2rem;
+}
+
+.right-column {
+    padding-left: 1rem;
+}
+
+.template2 h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.template2-skills {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.template2-skills li {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Component specific styles */
+.template2 .each-item {
+    margin-bottom: 1rem;
+}
+
+.template2 .education-item {
+    margin-bottom: 1rem;
+}
+
+.template2 .experience-item {
+    margin-bottom: 1.5rem;
+}
+
+.template2 .projects-item {
+    margin-bottom: 1rem;
+}
+
+.template2 .list-disc {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.template2 .list-disc li {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+/* Header styles */
+.template2-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.name-title {
+    flex: 1;
+}
+
+.name-input, .name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: #333;
+}
+
+.title-text {
+    font-size: 0.875rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0.25rem 0 0 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: right;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.contact-item input {
+    text-align: right;
+}
+
+/* Adjust main content to maintain the border */
+.main-content {
+    border-top: 1px solid #000;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 2rem;
+}
+
+.template2-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.name-title {
+    flex: 1;
+    max-width: 60%;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    white-space: nowrap;
+}
+
+.title-text {
+    font-size: 0.875rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0.25rem 0 0 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: right;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.contact-item {
+    line-height: 1.4;
+}
+
+.main-content {
+    border-top: 1px solid #000;
+    margin-top: 1rem;
+    padding-top: 2rem;
+}
+
+/* Print styles */
+@media print {
+    .template2 {
+        padding: 0;
+    }
+    
+    .template-actions {
+        display: none;
+    }
+}

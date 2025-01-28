@@ -1,0 +1,40 @@
+.templates-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1-header-style{
+    margin: 3rem 5rem;
+    margin-bottom: 0;
+    font-family: "Poppins", sans-serif;
+    color: #1B9AA4;
+}
+
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container .template-image{
+    width: 90%;
+    border: 3px solid #404040;
+    box-shadow: 4px 4px 4px #404040;
+}
+
+@media screen and (max-width: 768px) {
+    .templates-h1{
+        margin: 2rem;
+    }
+
+    .templates-container{
+        width: 95%;
+        grid-template-columns: 1fr;
+        gap:2rem 1rem;
+    }
+}

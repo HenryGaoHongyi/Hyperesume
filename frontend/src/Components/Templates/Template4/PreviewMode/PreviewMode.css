@@ -1,0 +1,114 @@
+/* Template4 Preview Mode Component Styles */
+
+.template4 {
+    max-width: 8.27in;
+    margin: 0 auto;
+    padding: 1.5rem;
+    font-family: Arial, sans-serif;
+}
+
+.template4-header {
+    margin-bottom: 1.5rem;
+}
+
+.template4-header .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.template4-header .title {
+    color: #0065FC;
+    font-size: 14px;
+    margin: 0.25rem 0 0.5rem;
+}
+
+.template4-header .contact-info {
+    color: #333;
+    font-size: 12px;
+}
+
+.template4-header .contact-info span:not(:last-child)::after {
+    content: " • ";
+    margin: 0 0.5rem;
+}
+
+.template4-content h2 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+    margin: 1.5rem 0 1rem;
+}
+
+.template4-content .experience-item {
+    margin-bottom: 1rem;
+}
+
+.template4-content .exp-header {
+    margin-bottom: 0.5rem;
+}
+
+.template4-content .exp-title h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.template4-content .company-location {
+    color: #555;
+    font-size: 12px;
+    margin: 0.25rem 0;
+}
+
+.template4-content .dates {
+    font-size: 12px;
+    color: #555;
+}
+
+.template4-content .responsibilities {
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+    font-size: 12px;
+}
+
+.template4-content .two-column-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.template4-content .skill-category {
+    margin-bottom: 0.5rem;
+}
+
+.template4-content .skill-category h3 {
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 0;
+    color: #555;
+}
+
+.template4-content .skill-category p {
+    font-size: 12px;
+    margin: 0.25rem 0;
+}
+
+.template4-content .certification-item {
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media print {
+    .template4 {
+        padding: 0;
+    }
+    
+    .template-actions {
+        display: none;
+    }
+}

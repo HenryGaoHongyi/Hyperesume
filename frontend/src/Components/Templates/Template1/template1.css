@@ -1,0 +1,244 @@
+/* Base template styles */
+.template-container {
+  padding: 20px;
+  max-width: 8.27in;
+  margin: 0 auto;
+}
+
+.resume-template {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  width: 8.27in;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.template1-header {
+  background-color: #333333;
+  color: #FFF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.template1-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.template1-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+/* Section Styles */
+h2 {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.each-item {
+  padding: 0 10px;
+}
+
+/* Education Styles */
+.school-grad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.school {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.edu-degree {
+  margin-top: 3px;
+}
+
+/* Skills Styles */
+.skill {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+.skill p {
+  margin: 0;
+}
+
+.category {
+  font-weight: 600;
+}
+
+/* Experience Styles */
+.exp-role-company {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.exp-location-date {
+  font-style: italic;
+  margin-top: 3px;
+}
+
+.list-disc {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Project Styles */
+.project-name-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-name {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.project-date {
+  margin-top: 0;
+}
+
+/* Certification Styles */
+.certs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Form Styles */
+.input-styling{
+  border: none;
+  margin: 5px 0;
+  width: auto;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Button Styles */
+.template-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.delete-btn{
+  border: none !important;
+  background-color: transparent !important;
+  color: #000;
+}
+
+.print-btn {
+  background-color: #2196F3;
+}
+
+/* Form Button Styles */
+.form-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button{
+  margin-right: 10px;
+}
+
+.button-container button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-items-btn{
+  width: 90%;
+  background-color: transparent;
+  border: 2px solid #1B9AA4;
+  color: #1B9AA4;
+  border-radius: 20px;
+  align-self: center;
+  font-weight: 600;
+  padding: 7px 0;
+}
+
+.saveBtn{
+  background-color: #1B9AA4;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 10px;
+  color: #FFF;
+}
+.cancelBtn{
+  background-color: transparent;
+  border: none;
+  color: #1B9AA4;
+}
+
+/* Print Styles */
+@media print {
+  @page {
+      margin: 0;
+      size: A4;
+  }
+
+  html, body {
+      margin: 0;
+      padding: 0;
+      width: 210mm;
+      height: 297mm;
+  }
+
+  .template-container {
+      padding: 0;
+      width: 100%;
+      margin: 0;
+      box-shadow: none;
+  }
+
+  .resume-template {
+      padding: 20px;
+      margin: 0;
+      border: none;
+      box-shadow: none;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+  }
+
+  .template-actions,
+  button,
+  .no-print {
+      display: none !important;
+  }
+
+  /* Hide header and footer */
+  thead {
+      display: table-header-group;
+  }
+  
+  tfoot {
+      display: table-footer-group;
+  }
+}

@@ -1,0 +1,25 @@
+
+
+.responsibilities-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.responsibility-input {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.responsibility-input input {
+    flex: 1;
+    border: none;
+}
+
+.delete-btn{
+    border: none !important;
+    background-color: transparent !important;
+    color: #000;
+  }
+

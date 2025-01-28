@@ -1,0 +1,23 @@
+.template3-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #1767A3;
+    padding-bottom: 1rem;
+}
+
+.header-content {
+    max-width: 100%;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 0.25rem 0;
+    color: #1767A3;
+}
+
+.contact-line {
+    font-size: 12px;
+    color: #000;
+    line-height: 1.2;
+}

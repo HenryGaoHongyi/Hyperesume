@@ -1,0 +1,149 @@
+.template4 {
+    max-width: 8.27in;
+    margin: 0 auto;
+    padding: 1.5rem;
+    font-family: Arial, sans-serif;
+}
+
+.template4-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+    color: #000;
+    font-family: serif;
+}
+
+.title {
+    color: #0065FC;
+    font-size: 1.3rem;
+    margin: 0.25rem 0 0.5rem;
+    font-weight: 600;
+    font-family: serif;
+}
+
+.contact-info {
+    color: #333;
+    font-size: 0.8rem;
+}
+
+.skills-section.template4-skills{
+    gap: 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+    margin: 1.5rem 0 1rem;
+}
+
+.experience-item {
+    margin-bottom: 1rem;
+}
+
+.exp-header {
+    margin-bottom: 0.5rem;
+}
+
+.exp-title h3 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.company-location {
+    color: #0065FC;
+    font-size: 0.8rem;
+    margin: 0.25rem 0;
+    font-weight: 600;
+}
+
+.dates {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.responsibilities {
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+}
+
+.two-column-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.skill-category {
+    margin-bottom: 0.5rem;
+}
+
+.skill-category h3 {
+    text-transform: capitalize;
+    margin: 0;
+    color: #555;
+}
+
+.edu-header-template4 .graduation-date{
+    font-size: 0.8rem;
+}
+
+.edu-header-template4 .degree{
+    font-weight: 600;
+}
+
+.edu-header-template4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edu-header-template4 p{
+    margin: 0;
+}
+p.school-template4{
+    margin: 0.3rem 0;
+    font-size: 0.8rem;
+    color: #0065FC;
+    font-weight: 600;
+}
+
+.skill-category p {
+    margin: 0.25rem 0;
+}
+
+.skill-category.template4-skills > h3{
+    color: #0065FC;
+}
+
+.certification-item {
+    margin-bottom: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.certification-item.template4-certs .cert-name{
+    font-weight: 400;
+}
+
+.certification-item.template4-certs .cert-date{
+    font-size: 0.8rem;
+}
+
+@media print {
+    .template4 {
+        padding: 0;
+    }
+    
+    .template-actions {
+        display: none;
+    }
+}

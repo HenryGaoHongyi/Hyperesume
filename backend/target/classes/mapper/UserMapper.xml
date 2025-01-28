@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hyperesume.mapper.UserMapper">
+
+    <!-- Map user with roles -->
+    <resultMap id="userMap" type="com.hyperesume.model.User">
+        <!-- Map primary user fields -->
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+        <result property="role" column="role"/>
+
+        <!-- Map roles (collection of SysRole) -->
+        <collection property="roles" ofType="com.hyperesume.model.SysRole">
+            <id property="roleId" column="role_id"/>
+            <result property="roleName" column="role_name"/>
+        </collection>
+    </resultMap>
+
+    <!-- Query user and associated roles by username -->
+    <select id="findByUsernameWithRoles" parameterType="string" resultMap="userMap">
+        SELECT
+            u.id,
+            u.username,
+            u.password,
+            u.role,
+            r.role_id,
+            r.role_name
+        FROM users u
+                 LEFT JOIN Sys_role_user sru ON u.id = sru.id
+                 LEFT JOIN Sys_Role r ON sru.role_id = r.role_id
+        WHERE u.username = #{username};
+    </select>
+</mapper>

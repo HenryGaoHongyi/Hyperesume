@@ -1,0 +1,29 @@
+.school-grad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.school-deleteBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-btn{
+    border: none;
+    background-color: transparent;
+}
+
+.edu-degree{
+    margin-top: 0;
+}
+
+.edu-grad-date{
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.school{
+    margin-top: 0;
+}

@@ -1,0 +1,232 @@
+/* AdminDashboard.css */
+
+/* Main container styles */
+.admin-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #444;
+    margin: 25px 0 15px;
+    font-size: 1.5rem;
+}
+
+/* Message styles */
+.success-message {
+    color: #28a745;
+    padding: 10px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.error-message {
+    color: #dc3545;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+/* Table styles */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    table-layout: fixed; /* Added for consistent column widths */
+}
+
+/* Column width specifications */
+.admin-table th:nth-child(1) { width: 12%; } /* Username */
+.admin-table th:nth-child(2) { width: 8%; }  /* Role */
+.admin-table th:nth-child(3) { width: 10%; } /* First Name */
+.admin-table th:nth-child(4) { width: 10%; } /* Last Name */
+.admin-table th:nth-child(5) { width: 20%; } /* Email */
+.admin-table th:nth-child(6) { width: 15%; } /* Phone */
+.admin-table th:nth-child(7) { width: 15%; } /* Actions */
+
+.admin-table th, .admin-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+    white-space: nowrap;        /* Prevent text wrapping */
+    overflow: hidden;           /* Hide overflow */
+    text-overflow: ellipsis;    /* Add ellipsis for overflow */
+}
+
+.admin-table th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.admin-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Action column styles */
+.action-column {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.action-column button, 
+.action-column a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* Button styles */
+button {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Logout button specific styles */
+.logout-button {
+    background-color: #6c757d;
+    margin-top: 20px;
+}
+
+.logout-button:hover {
+    background-color: #5a6268;
+}
+
+/* Profile link styles */
+.profile-link {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+/* Empty state message */
+.empty-message {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+}
+
+.role-select {
+    padding: 4px 8px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.role-select:hover {
+    border-color: #adb5bd;
+}
+
+.role-select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+/* Style for different role options */
+.role-select option {
+    padding: 8px;
+}
+
+.edit-input {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.edit-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+.editing-row {
+    background-color: #f8f9fa;
+}
+
+.save-button {
+    background-color: #28a745;
+    margin-right: 8px;
+}
+
+.save-button:hover {
+    background-color: #218838;
+}
+
+.cancel-button {
+    background-color: #6c757d;
+}
+
+.cancel-button:hover {
+    background-color: #5a6268;
+}
+
+.edit-button {
+    background-color: #007bff;
+    margin-right: 8px;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.action-column button {
+    padding: 4px 12px;
+    font-size: 14px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 10px;
+    }
+    
+    .admin-table {
+        font-size: 14px;
+    }
+    
+    .admin-table th,
+    .admin-table td {
+        padding: 8px 6px;
+    }
+    
+    button {
+        padding: 4px 8px;
+    }
+}

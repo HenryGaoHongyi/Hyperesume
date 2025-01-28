@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>Profile - Hyperesume</title>
+</head>
+<body>
+<h1>Your Profile</h1>
+
+<!-- Display authenticated user information -->
+<p>Welcome, <span sec:authentication="name">User</span>!</p>
+
+<!-- Profile form for updating user details -->
+<form th:action="@{/profile}" th:object="${profile}" method="post">
+    <div>
+        <label>First Name:</label>
+        <input type="text" th:field="*{firstName}" required />
+        <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span>
+    </div>
+    <div>
+        <label>Last Name:</label>
+        <input type="text" th:field="*{lastName}" required />
+        <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></span>
+    </div>
+    <div>
+        <label>Email:</label>
+        <input type="email" th:field="*{email}" required />
+        <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+    </div>
+    <div>
+        <label>Phone:</label>
+        <input type="text" th:field="*{phone}" />
+    </div>
+    <button type="submit">Save</button>
+</form>
+
+<!-- Display user experiences -->
+<h2>Experiences</h2>
+<table>
+    <tr>
+        <th>Job Title</th>
+        <th>Company</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Actions</th>
+    </tr>
+    <!-- Iterate through experiences -->
+    <tr th:each="experience : ${experiences}">
+        <td th:text="${experience.jobTitle}">Job Title</td>
+        <td th:text="${experience.companyName}">Company</td>
+        <td th:text="${experience.startDate}">Start Date</td>
+        <td th:text="${experience.endDate}">End Date</td>
+        <td>
+            <a th:href="@{'/experience/edit/' + ${experience.id}}">Edit</a> |
+            <a th:href="@{'/experience/delete/' + ${experience.id}}">Delete</a>
+        </td>
+    </tr>
+</table>
+
+<!-- Link to add new experience -->
+<a th:href="@{/experience/add}">Add Experience</a>
+
+<!-- Logout link -->
+<p><a th:href="@{/logout}">Logout</a></p>
+</body>
+</html>
